@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    @font-face {
+        font-family:RobotoCondensed-Regular;
+        src: url(../fonts/RobotoCondensed-Regular.ttf);
+    }
+    @font-face{
+        font-family:RobotoCondensed-Light;
+        src: url(../fonts/RobotoCondensed-Light.ttf);
+    }
+    @font-face {
+        font-family:RobotoCondensedic-Italic;
+        src: url(../fonts/RobotoCondensed-Italic.ttf);
+    }
+    @font-face{
+        font-family:LEMONMILK-Medium;
+        src: url(../fonts/LEMONMILK-Medium.otf);
+    }
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    background: #FAF8F6;
+    max-width: 2000px;
+    float: left;
+    position: fixed;
+}
+.menu{
+    width: 40%;
+    margin-right: 20px;
+    float: right;
+    height: 70px;
+    text-align: center;
+}
+nav label, #icon-menu{
+    display:none;
+}
+.menu ul li{
+    width: 22%;
+    color: black;
+    list-style: none;
+    float: left;
+    line-height: 70px;
+    font-family: RobotoCondensed-Regular;
+    text-transform: uppercase;
+}
+.logo-nav{
+    float: left;
+    height: 50px;
+    margin: 1% 2%;
+}
+.insta-nav{
+    float: right;
+    height: 30px;
+    margin: 20px 5px;
+} 
+
+/*------------header------------*/
+header{
+    width: 100%;
+    float: left;
+    height: auto;
+}
+.video-header{
+    width: 100%;
+    float: left;
+    height: auto;
+    position: fixed;
+    z-index: -1000;
+}
+#nombre-logo{
+    margin:  6% 5%;
+    width: 32%;
+}
+#caja-objetivo{
+    background: #ff0080;
+    width: 20%;
+    float: right;
+    margin: 6% 5%;
+    border-radius: 20px;
+}
+#smile{
+    width: 63%;
+    margin: 12% 19% 0%;
+}
+#frase1{
+    font-size: 175%;
+    text-align: center;
+    font-family: RobotoCondensed-Regular;
+    color: #FAF8F6;
+}
+#frase2{
+    font-size: 140%;
+    text-align: center;
+    padding: 4% 10% 15%;
+    font-family: RobotoCondensedic-Italic;
+    color: #FAF8F6;
+    font-style: italic;
+    letter-spacing: normal;
+}
+#caja-eslogan{
+    width: 45%;
+    background: #292929;
+    margin: 0 25%;
+}
+#eslogan{
+    text-align: center;
+    font-size: 300%;
+    color: #FAF8F6;
+    padding: 2% 25%;
+    margin-bottom: 2%;
+    font-family: LEMONMILK-Medium;
+}
+
+
+/*----------objetivos---------------*/
+.one-third{
+    width: 100%;
+    background: white;
+    float: left;
+}
+.card{
+    width: 27%;
+    float: left;
+    margin: 3%;
+    text-align: center;
+    font-family:RobotoCondensed-Light;
+}
+.image-descrip{
+    width: 25%;
+}
+p {
+    font-size: 160%;
+    padding: 3%;
+    font-family: RobotoCondensed-Light;
+}
+  
+h1 {
+    font-size: 175%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: RobotoCondensed-Regular;
+    margin-top: 2%; 
+}
+
+  /*----------------main-------------*/
+  #nosotros{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 2% 10%;
+    background: #FAF8F6;
+}
+.columna{
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+}
+#fotogrande{
+    width: 47%;
+    float: left;  
+}
+.fotochica{
+    width: 52.8%;
+    float: right; 
+}
+/*----------Section sabores-----------*/
+
+#section-sabores{
+    float: left;
+    background: white;
+}
+h2{
+    font-family: RobotoCondensed-Regular;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 300%;
+}
+#descrip-sabores{
+    font-family: RobotoCondensed-Light;
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+}
+.caja-sabores{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 2% 10%;
+    background: white;
+}
+.sabores{
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+    background: #292929 ;
+    border-radius: 20px;
+}
+.tipos-sabores ul li{
+    font-size: 130%;
+    text-align: center;
+    font-family: RobotoCondensed-Regular;
+    color: #FAF8F6;
+    margin-bottom: 0.5%;
+}
+.titulo-sabores{
+    font-family: LEMONMILK-Medium;
+    text-align: center;
+    font-size: 250%;
+    color: #FAF8F6;
+}
+/*----------------------FOOTER------------------------*/
+.pie-pagina{
+    width: 100%;
+    float: left;
+    background-color: #ff0080;
+}
+.box{
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+}
+#mini-logo{
+    width: 35%;
+    margin-left: 15%;
+}
+.logos-footer{
+    text-align: center;
+    width: 10%;
+    margin-left: 18%;
+    margin-top: 5%;
+}
+h3{
+    font-family: RobotoCondensed-Regular;
+    text-align: center; 
+    font-size: 300%;
+}
+
+/*--------------------PHP--------------*/
+form{
+    width: 50%;
+    float: left;
+    margin: 15% 25%;
+    padding: 2%;
+    background: #292929;
+    border-radius: 20px;
+}
+
+label{
+    color: #FAF8F6;
+    font-family: LEMONMILK-Medium;
+    font-size: 150%;
+    margin-left: 3%;
+}
+.datos{
+    width: 100%;
+    margin-bottom: 2%;
+    font-size: 130%;
+    border-radius: 5px;
+    border: 1px  
+}
+#titulo-form{
+    color: #FAF8F6;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+    float: left;
+    font-family: LEMONMILK-Medium;
+    font-size: 130%;
+}
+.pedido{
+    width: 100%;
+    border: none;
+    text-align: center;
+    margin: 2%;  
+}
+#titulo-envio{
+    color: #FAF8F6;
+    font-family: LEMONMILK-Medium;
+    margin: 5% 2%;
+    font-size: 120%;
+}
+input{
+    width: 65%;
+    margin-bottom: 2%;
+    font-size: 120%;
+    border-radius: 5px;
+    border: 1px
+}
+.bntformu{
+    margin-top: 2%;
+    width: 100%;
+    font-family: LEMONMILK-Medium;
+}
+/*----------------------responsive---------------*/
+
+@media (max-width: 1523px){ 
+    #caja-eslogan{
+        display: none;} 
+}
+@media (max-width: 1417px){
+    input{
+        width: 60%;}  
+}
+@media (max-width: 1391px){  
+    #frase2{
+        font-size: 120%;}
+    #nombre-logo{
+        margin: 10% 5%;}
+    #caja-objetivo{
+        margin: 8% 5%;}
+    #fotogrande{
+        width: 50%;}
+    .fotochica{
+        width: 49%;
+        margin-bottom: 9.5%;}
+    input{
+        width: 100%;}                
+}        
+@media (max-width: 1138px){
+    #caja-objetivo{
+        display: none;}
+}
+@media (max-width: 1095px){
+    .columna{
+        width: 100%;}
+}
+@media (max-width: 987px){
+    .tipos-sabores ul li{
+        font-size: 110%;}
+    .titulo-sabores{
+        font-size: 170%;}
+    p{
+        font-size: 140%;}
+    form{
+        width: 70%;
+        padding: 5%;
+        margin: 20% 16%;}       
+ }
+@media (max-width:880px){
+    nav label{
+        display: block;
+        width: 50px;
+        height: 10px;
+        margin: 10px;
+        float: right;}
+    .icono{
+        width: 100%;}
+    .menu{
+        width:50%;
+        height: auto;
+        margin-top: 70px;
+        background: #292929;
+        margin-right: -70%;}
+    .menu ul li{
+        width: 100%;
+        color: #FAF8F6;
+        line-height: 70px;}
+    #icon-menu:checked ~ .menu{
+        margin-right: auto;}
+    .insta-nav{
+        display:none;}    
+}
+@media (max-width: 792px){
+    #nombre-logo{
+        margin:  15% 5%;}
+    .image-descrip{
+        width: 35%;}
+    #fotogrande{
+        display: none;}
+    .sabores{
+        width: 70%;
+        margin-left: 15%;}
+    h2{
+        font-size: 200%;}
+    #descrip-sabores{
+        font-size: 130%;}
+}
+@media (max-width: 655px){
+    .card{
+        width: 100%;}
+    .image-descrip{
+        width: 10%;}
+    #mini-logo{
+        width: 45%;}
+    form{
+        padding: 8%;}       
+}
+@media (max-width:575px){
+    h2{
+        font-size: 170%;}
+    #descrip-sabores{
+        font-size: 120%;}
+    .tipos-sabores ul li{
+        font-size: 90%;}
+    .titulo-sabores{
+        font-size: 120%;
+        margin-bottom: 1%;}
+    p{
+        font-size: 120%;}
+    h1{
+        font-size: 130%;}
+}
+@media(max-width:450px){
+    .sabores{
+        margin-left: 18%;}
+    h2{
+        font-size: 150%;}
+    #descrip-sabores{
+        font-size: 100%;}
+    h3{
+        font-size: 250%;}
+    #nombre-logo{
+        margin:  20% 5%;}
+    .logo-nav{
+        margin: 2%;}
+}       
+
+
+
+
+

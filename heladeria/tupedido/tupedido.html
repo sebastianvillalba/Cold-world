@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Cold World</title>
+
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="icon" href="../img/heladeria.png">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Bienvenidos a nuestra heladeria, ">
+        <meta name="keywords" content="helados, tienda, sabores, palabras, clave">
+    </head>
+    <body>
+        <nav>
+            <a href="#"><img src="../img/heladeria.png" alt="" class="logo-nav"></a>
+                <label for="icon-menu">
+                    <img src="../img/menu.png" alt="MENÚ" class="icono">
+                </label>
+                <input type="checkbox" id="icon-menu">
+                <div class="menu">
+                    <ul>
+                        <a href="../index.html"><li>INICIO</li></a>
+                        <a href="../index.html#nosotros"><li>NOSOTROS</li></a>
+                        <a href="../index.html#section-sabores"><li>SABORES</li></a>
+                        <a href="#"><li>TU PEDIDO!!</li></a>
+                    </ul>
+                    <a href="https://instagram.com/"><img src="../img/instagram.svg" alt="instagram" class="insta-nav"></a>
+                </div>
+        </nav>    
+         
+        <form action="../php/pedido.php" method="post">
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" class="datos" required> 
+                
+                <label for="whatsapp">WhatsApp:</label>
+                <input type="text" name="whatsapp" class="datos" required> 
+            
+            <h33 id="titulo-form">ARMA TU PEDIDO</h33>
+
+            <div class="pedido">
+                <select name="pedido1-cantidad" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="1/4">1/4</option>
+                    <option value="1/2">1/2</option>
+                    <option value="1K">1K</option>
+                    <option value="2K">2K</option>
+                </select>
+                <select name="pedido1-sabor1" required>
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+                <select name="pedido1-sabor2">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+                <select name="pedido1-sabor3">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+            </div>
+            <div class="pedido">
+                <select name="pedido2-cantidad">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1/4">1/4</option>
+                    <option value="1/2">1/2</option>
+                    <option value="1K">1K</option>
+                    <option value="2K">2K</option>
+                </select>
+                <select name="pedido2-sabor1">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+                <select name="pedido2-sabor2">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+                <select name="pedido2-sabor3">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+            </div>
+            <div class="pedido">
+                <select name="pedido3-cantidad">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1/4">1/4</option>
+                    <option value="1/2">1/2</option>
+                    <option value="1K">1K</option>
+                    <option value="2K">2K</option>
+                </select>
+                <select name="pedido3-sabor1">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+                <select name="pedido3-sabor2">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+                <select name="pedido3-sabor3">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="Crema Americana">Crema americana</option>
+                    <option value="Crema vainilla">Crema vainilla</option>
+                    <option value="Crema mascarpone">Crema mascarpone</option>
+                    <option value="Crema de almendra">Crema de almendra</option>
+                    <option value="Crema tramontana">Crema tramontana</option>
+                    <option value="Chantilly con frutillas">Chantilly con frutillas</option>
+                    <option value="Menta granizada">Menta granizada</option>
+                    <option value="Crema cookies">Crema cookies</option>
+                    <option value="Granizado">Granizado</option>
+                    <option value="Banana Split">Banana Split</option>
+                    <option value="Dulce de leche">Dulce de leche</option>
+                    <option value="Dulce de leche granizado">Dulce de leche granizado</option>
+                    <option value="Chocolate con almendras">Chocolate con almendras</option>
+                    <option value="Chocolate con suizo">Chocolate con suizo</option>
+                    <option value="Chocolate con italiano">Chocolate con italiano</option>
+                    <option value="Chocolate con blanco">Chocolate con blanco</option>
+                    <option value="Frutilla a la crema">Frutilla a la crema</option>
+                    <option value="Frutilla">Frutilla</option>
+                    <option value="Frutos">Frutos rojos</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Mousse de limon">Mousse de limón</option>
+                    <option value="Multifruta">Multifruta</option>
+                    <option value="Maracuya">Maracuyá</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Uva">Uva</option>               
+                    <option value="Frutilla Veg">Frutilla - Vegano</option>
+                    <option value="Frutos Rojos Veg">Frutos Rojos - Vegano</option>
+                    <option value="Frambuesa Veg">Frambuesa - Vegano</option>
+                    <option value="Caribe Veg">Caribe - Vegano</option>
+                    <option value="Limon Veg">Limón - Vegano</option>
+                    <option value="Limonada Veg">Limonada - Vegano</option>
+                    <option value="Maracuyá Veg">Maracuyá - Vegano</option>
+                </select>
+            </div>
+
+            <h33 id="titulo-envio">DATOS PARA ENVÍO:</h33>
+            <input type="text" name="direccion" placeholder="Dirección" required>
+
+            <input type="submit" value="HACER PEDIDO" class="bntformu">
+    
+        </form>
+       
+    
+
+        <footer class="pie-pagina">
+            <div class="box">
+            <img src="../img/cold-world.svg" id="mini-logo"alt="coldworld">
+            </div>
+            <div class="box">
+            <h3>SIGUENOS</h3>
+            <a href="https://instagram.com/"><img src="../img/instagram.svg" alt="instagram" class="logos-footer"></a>
+            <a href="https://twitter.com/"><img src="../img/twitter.png" alt="twitter" class="logos-footer"></a>
+            <a href="https://facebook.com/"><img src="../img/facebook.png" alt="facebook" class="logos-footer"></a>
+            </div>
+        </footer>
+    </body>
+</html> 
